@@ -1,0 +1,77 @@
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    text-align: center;
+}
+
+.text {
+    color: red;
+}
+
+.snow-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snow {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: fallingSnow 3s linear infinite;
+
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+@keyframes fallingSnow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.snow:nth-child(1) {
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 6s;
+}
+
+.snow:nth-child(2) {
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+}
+
+.snow:nth-child(3) {
+    left: 25%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 4s;
+}
+
+video {
+    margin: 500px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.hours-minutes-and-seconds{
+    border: 5px;
+    border-style: solid;
+    border-color: red;
+}
+
